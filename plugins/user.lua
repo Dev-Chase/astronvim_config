@@ -28,7 +28,6 @@ return {
         opts = {},
         event = "VeryLazy"
     },
-    -- TODO: implement keymaps
   -- {
   --   "ray-x/lsp_signature.nvim",
   --   event = "BufRead",
