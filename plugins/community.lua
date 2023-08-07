@@ -10,8 +10,12 @@ return {
   { import = "astrocommunity.colorscheme.sonokai" },
   { import = "astrocommunity.colorscheme.monokai-pro-nvim" },
   { import = "astrocommunity.colorscheme.nord-nvim" },
-  { import = "astrocommunity.colorscheme.nightfox-nvim" },
+  { import = "astrocommunity.colorscheme.nightfox-nvim", enabled=true},
   { import = "astrocommunity.colorscheme.tokyonight-nvim" },
+  { import = "astrocommunity.pack.toml" },
+  { import = "astrocommunity.motion.leap-nvim" },
+  { import = "astrocommunity.programming-language-support.web-tools-nvim" },
+  -- { import = "astrocommunity.pack.python" },
   -- { import = "astrocommunity.terminal-integration" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
 }

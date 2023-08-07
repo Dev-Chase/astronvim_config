@@ -6,17 +6,18 @@
 return {
     -- first key is the mode
     n = {
-        -- second key is the lefthand side of the map
-        -- mappings seen under group name "Tab"
-        ["<leader>Tn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
-        ["<leader>Tc"] = { "<cmd>tabclose<cr>", desc = "Close tab" },
-        ["<leader>Te"] = { "<cmd>tcd<cr>", desc = "Change Directory Tab" },
+      -- second key is the lefthand side of the map
+      -- mappings seen under group name "Tab"
+      ["<leader>Tn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
+      ["<leader>Tc"] = { "<cmd>tabclose<cr>", desc = "Close tab" },
+      ["<leader>Te"] = { ":tcd ", desc = "Change Directory Tab" },
 
-        -- mappings seen under group name "Todo Comments"
-        ["<leader>ft"] = { "<cmd>TodoTelescope<cr>"},
+      -- mappings seen under group name "Todo Comments"
+      ["<leader>ft"] = { "<cmd>TodoTelescope<cr>"},
 
-        -- mappings seen under group name "Todo Comments"
-        ["<leader>st"] = { "<cmd>TodoTelescope<cr>"},
+      -- mappings seen under group name "Todo Comments"
+      ["<leader>st"] = { "<cmd>TodoTelescope<cr>"},
+
         -- Session Manager
       ["<leader>s"] = { desc = require("astronvim.utils").get_icon("Session", 1, true) .. "Session" },
       ["<leader>sl"] = { "<cmd>SessionManager! load_last_session<cr>", desc = "Load last session" },
