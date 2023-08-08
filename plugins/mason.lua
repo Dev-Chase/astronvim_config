@@ -11,9 +11,12 @@ return {
         "lua_ls",
         "grammarly",
         "pyright",
+        -- "clangd",
+        -- "arduino-language-server",
         -- "html-lsp",
         -- "rome",
       })
+      opts.automatic_installation = true
     end,
   },
   -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources

@@ -65,6 +65,10 @@ return {
             })
         end
     },
+    {
+        "stevearc/vim-arduino",
+        ft = { "arduino" },
+    },
   -- {
   --   "ray-x/lsp_signature.nvim",
   --   event = "BufRead",
