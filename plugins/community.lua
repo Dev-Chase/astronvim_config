@@ -15,7 +15,7 @@ return {
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.motion.leap-nvim" },
   { import = "astrocommunity.programming-language-support.web-tools-nvim" },
-  { import = "astrocommunity.pack.cpp" },
+  -- { import = "astrocommunity.pack.cpp" },
   -- { import = "astrocommunity.pack.python" },
   -- { import = "astrocommunity.terminal-integration" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
