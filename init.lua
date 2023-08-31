@@ -18,7 +18,7 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "gruvbox-baby",
+  colorscheme = "astrodark",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -59,7 +59,7 @@ return {
 
     setup_handlers = {
       -- add custom handler
-      rust_analyzer = function(_, opts) require("rust-tools").setup { server = opts } end
+      rust_analyzer = function(_, opts) require("rust-tools").setup { server = opts } end,
     },
   },
 
@@ -78,6 +78,33 @@ return {
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
+    local dap = require('dap')
+    -- dap.adapters.lldb = {
+    --   type = 'executable',
+    --   command = '/opt/homebrew/opt/llvm/bin/lldb-vscode',
+    --   name = 'lldb'
+    -- }
+
+    dap.configurations.cpp = {
+      {
+        name = 'Launch',
+        type = 'codelldb',
+        request = 'launch',
+        program = function()
+          return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
+        end,
+        cwd = '${workspaceFolder}',
+        stopOnEntry = false,
+        args = function()
+          local a = {}
+          for word in string.gmatch(vim.fn.input("Args: "), "%S+") do
+            table.insert(a, word)
+          end
+          return a
+        end,
+      },
+    }
+    dap.configurations.c = dap.configurations.cpp
     -- Set up custom filetypes
     -- vim.filetype.add {
     --   extension = {
