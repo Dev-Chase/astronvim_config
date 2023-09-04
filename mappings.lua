@@ -127,7 +127,7 @@ return {
 
       -- Toggle Term Utility Mapping
       ["<leader>tT"] =  { "<cmd>ToggleTerm direction=tab<cr>", desc = "ToggleTerm tab" },
-      ["<CS-I>"] =  { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
+      ["<M-'>"] =  { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
       -- quick save
       ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
 
@@ -151,7 +151,7 @@ return {
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
-    ["<CS-I>"] =  { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
+    ["<M-'>"] =  { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
     ["<C-=>"] = {"<cmd>resize+2<cr>", desc = "Resize Horizontal +"},
     ["<C-_>"] = {"<cmd>resize-2<cr>", desc = "Resize Horizontal -"},
     ["<M-=>"] = {"<cmd>vertical resize+2<cr>", desc = "Resize Vertical +"},
