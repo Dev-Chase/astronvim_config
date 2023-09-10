@@ -50,7 +50,7 @@ return {
     },
     -- enable servers that you already have installed without mason
     servers = {
-      -- ""
+      -- "clangd"
       -- "pyright",
       -- "rust_analyzer",
       -- "grammarly",

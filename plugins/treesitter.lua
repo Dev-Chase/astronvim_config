@@ -12,6 +12,8 @@ return {
       "cpp",
       "c",
       "json",
+      "bash",
+      "make"
     })
   end,
 }
