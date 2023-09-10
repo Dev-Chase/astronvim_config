@@ -13,6 +13,7 @@ return {
   { import = "astrocommunity.colorscheme.nightfox-nvim", enabled=true},
   { import = "astrocommunity.colorscheme.tokyonight-nvim" },
   { import = "astrocommunity.pack.toml" },
+  -- { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.motion.leap-nvim" },
   { import = "astrocommunity.programming-language-support.web-tools-nvim" },
   -- { import = "astrocommunity.pack.cpp" },

@@ -10,7 +10,7 @@ return {
         "rust_analyzer",
         "lua_ls",
         "pyright",
-        "clangd",
+        -- "clangd",
         -- "arduino-language-server",
         -- "html-lsp",
         -- "rome",
