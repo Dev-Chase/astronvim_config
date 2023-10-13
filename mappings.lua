@@ -18,6 +18,13 @@ return {
     -- mappings seen under group name "Todo Comments"
     ["<leader>st"] = { "<cmd>TodoTelescope<cr>"},
 
+    -- mappings seen under group name "Treesitter-Context"
+    ["[c"] = {function() require("treesitter-context").go_to_context() end, desc="Go to context"},
+
+    -- For Building C and C++ Programs
+    ["<MS-b>"] = {":make run<cr>", desc="Run with Make"},
+    ["<MS-v>"] = {":make<cr>", desc="Build with Make"},
+
     -- mappings seen under group name "Arduino Vim"
     ["<C-a>v"] = { "<cmd>ArduinoVerify<cr>"},
     ["<C-a>u"] = { "<cmd>ArduinoUpload<cr>"},
